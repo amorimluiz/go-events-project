@@ -6,7 +6,6 @@ This project is a Go application that manages events, allowing user registration
 
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Technologies Used
@@ -53,10 +52,6 @@ This project is a Go application that manages events, allowing user registration
    ```
 
 4. The application will be available at `http://localhost:8080`.
-
-## Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## License
 
