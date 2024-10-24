@@ -43,7 +43,7 @@ This project is a Go application that manages events, allowing user registration
    DB_HOST=
    DB_PORT=
    DB_NAME=
-   JWT_SECRET=""
+   JWT_SECRET=
    ```
 
 3. Start the containers using Docker Compose:
