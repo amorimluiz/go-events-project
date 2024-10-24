@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  events-go:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - mysql
+    networks:
+      - events-go-network
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - events-go-network
+
+volumes:
+  mysql-data:
+networks: 
+  events-go-network:
+    driver: bridge
